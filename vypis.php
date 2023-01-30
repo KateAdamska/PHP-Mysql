@@ -1,6 +1,11 @@
 <?php
 include 'connect.php';
 ?>
+<style>
+<?php
+include 'style.css';
+?>
+</style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +34,7 @@ include 'connect.php';
             }
         echo "<h2>Otázky a odpovědi</h2>";
             while($radek = mysqli_fetch_array($vysledek)) {
-                    echo "<p>".$radek['text_otazka']."</p>
+                    echo "<p class='questions'>".$radek['text_otazka']."</p>
                     ";
 
                     $id2 = $radek['id_otazka'];
@@ -37,7 +42,7 @@ include 'connect.php';
                     if (!($vysledek2 = mysqli_query($con, $query2))) {
                     die("Nelze se připojit!");
                     }
-                    echo "<table>";
+                    echo "<table class='secTable'>";
                     while ($radek2 = mysqli_fetch_array($vysledek2)) {
                     echo "<tr><td>".$radek2['text_odpoved']."</td>
                     <td><a href='vypis.php?id=".$radek2['id_odpoved']."' title='Seznam otázek'>".$radek2['pocet_hlasu']."</a></td></tr>"
