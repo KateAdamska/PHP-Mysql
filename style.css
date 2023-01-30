@@ -1,0 +1,45 @@
+body {
+    box-sizing: border-box;
+    font-size: 2rem;
+    background-color: rgb(92, 151, 223);
+}
+h1 {
+    text-align: center;
+}
+
+.form {
+    text-align: center;
+}
+
+.btn {
+    margin-top: .5rem;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    background-color: rgb(23, 40, 172);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+table {
+    margin: 5rem auto 0;
+    font-size: 1.5rem;
+}
+
+.secTable {
+    margin-top: 0;
+}
+
+td {
+    padding: .3rem 1rem;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+textarea {
+    padding: .5rem;
+    border-radius: 5px;
+}
+
